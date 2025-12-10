@@ -63,7 +63,7 @@ let computerScore = 0;
 
     function getHumanChoice() {
 
-    let humanAnswer = parseInt(prompt('Enter the number you wanna choose as your play hand, such as 0, 1 or 2'))
+    let humanAnswer = parseInt(prompt('Enter the number you wanna choose as your play hand, 0 = rock, 1 = paper or 2 = scissors'))
     const choicesForHuman = ['rock', 'paper', 'scissors'];
 
     if (humanAnswer === 0) {
