@@ -1,4 +1,3 @@
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -62,20 +61,22 @@ let computerScore = 0;
     }
 
     function getHumanChoice() {
+        const choicesForHuman = ['rock', 'paper', 'scissors'];
 
-    let humanAnswer = parseInt(prompt('Enter the number you wanna choose as your play hand, 0 = rock, 1 = paper or 2 = scissors'))
-    const choicesForHuman = ['rock', 'paper', 'scissors'];
+        while (true) {
+            const humanAnswer = parseInt(prompt('Enter the number you wanna choose as your play hand, 0 = rock, 1 = paper or 2 = scissors'));
 
-    if (humanAnswer === 0) {
-        return choicesForHuman[0]
-    } else if ( humanAnswer === 1) {
-        return choicesForHuman[1];
-    } else if (humanAnswer === 2) {
-        return choicesForHuman [2];
+            if (humanAnswer === 0) {
+                return choicesForHuman[0];
+            } else if (humanAnswer === 1) {
+                return choicesForHuman[1];
+            } else if (humanAnswer === 2) {
+                return choicesForHuman[2];
+            } else {
+                alert('Insira uma opcao valida');
+            }
+        }
     }
-};
 
 jogarPartidas()
     
-
-
