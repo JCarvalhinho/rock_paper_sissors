@@ -1,0 +1,22 @@
+
+
+.header {
+    background-color: lightsalmon;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+#play-game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+#play-game button {
+    display: flex;
+        justify-content: space-between;
+    margin: 1rem;
+    flex-direction: column;
+}
